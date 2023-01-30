@@ -99,6 +99,11 @@ a {
 
     }
 
+    &__content:hover {
+        box-shadow: 0 0 10px #0461ac;
+        transform: scale(1.02);
+    }
+
     &__link {
         font-style: normal;
         font-weight: 600;

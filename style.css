@@ -89,6 +89,10 @@ a {
 .section__content-three {
   background-image: url(./img/game-three.jpg);
 }
+.section__content:hover {
+  box-shadow: 0 0 10px #0461ac;
+  transform: scale(1.02);
+}
 .section__link {
   font-style: normal;
   font-weight: 600;
