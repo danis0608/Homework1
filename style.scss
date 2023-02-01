@@ -60,6 +60,15 @@ a {
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
+        transition: all .1s;
+    }
+
+    &__button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #9C0332;
+        border-color: #9C0332;
+        color: black;
+        ;
     }
 }
 
@@ -84,6 +93,7 @@ a {
         height: 300px;
         border-radius: 16px;
         box-sizing: border-box;
+        transition: all .1s;
 
         &-one {
             background-image: url(./img/game-one.jpg);
@@ -99,6 +109,11 @@ a {
 
     }
 
+    &__content:hover {
+        box-shadow: 0 0 10px #0461ac;
+        transform: scale(1.02);
+    }
+
     &__link {
         font-style: normal;
         font-weight: 600;
@@ -109,3 +124,5 @@ a {
 
 
 }
+
+@import 'mobile';
