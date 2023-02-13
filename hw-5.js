@@ -8,8 +8,8 @@
 //     }
 // }
 
-// numberOne = Number(prompt('Первое число'));
-// numberTwo = Number(prompt('Второе число'));
+// let numberOne = Number(prompt('Первое число'));
+// let numberTwo = Number(prompt('Второе число'));
 
 // console.log(`возвращаю число ${compare(numberOne, numberTwo)}`);
 
@@ -23,7 +23,7 @@
 //     }
 // }
 
-// x = Number(prompt('введите число'));
+// let x = Number(prompt('введите число'));
 // modulus(x);
 
 // Задание 3.1
@@ -32,8 +32,9 @@
 //     console.log(a**2);
 // }
 
-// y = Number(prompt('введите число'));
+// let y = Number(prompt('введите число'));
 // squaring1(y);
+
 
 // Задание 3.2 
 
@@ -41,16 +42,16 @@
 //     return a**2;
 // }
 
-// z = Number(prompt('введите число'));
+// let z = Number(prompt('введите число'));
 // console.log(squaring2(z));
 
 // Задание 4 
 
-// const ageQuestion = (a) => {
-//     a = Number(prompt('Сколько тебе лет?'));
+// const ageQuestion = () => {
+//     let a = Number(prompt('Сколько тебе лет?'));
 //     if (a < 0) {
 //         alert('ты что Бенджамин Баттон?');
-//     } else if (a > 13) {
+//     } else if (a >= 13) {
 //         alert('Добро пожаловать');
 //     }
 //     else {
@@ -63,25 +64,25 @@
 // Задание 5 
 
 // const numberCheck = (a, b) => {
-//     if (isNaN(a) || isNaN(b) === true ) {
-//         alert('Одно или оба значения не являются числом');
+//     if (isNaN(a) || isNaN(b)) {
+//         return 'Одно или оба значения не являются числом';
 //     } else {
 //         return a * b;
 //     }
 // }
 
-// firstNumber = prompt('введите первое число');
-// secondNumber = prompt('введите второе число');
+// let firstNumber = prompt('введите первое число');
+// let secondNumber = prompt('введите второе число');
 
-// multiple = numberCheck(firstNumber, secondNumber);
+// let multiple = numberCheck(firstNumber, secondNumber);
 // console.log(multiple);
 
 // Задание 6 
 
-// const cubing = (a) => {
-//     a = prompt('введите число')
+// const cubing = () => {
+//     let a = prompt('введите число')
 
-//     if (isNaN(a) === true ) {
+//     if (isNaN(a)) {
 //         alert('Переданный параметр не является числом');
 //     } else {
 //         return alert(`${a} в кубе равняется ${a**3}`);
@@ -92,8 +93,8 @@
 
 // Задание 7 
 
-const firstGame = (a) => {
-    a = prompt('Введите любой номер месяца, а я вам скажу какое это время года')
+const firstGame = () => {
+    let a = prompt('Введите любой номер месяца, а я вам скажу какое это время года')
 
     if (a >= 1 && a <= 2 || a == 12) {
         alert('это зимний месяц')
@@ -109,6 +110,3 @@ const firstGame = (a) => {
         alert('такого месяца не бывает')
     }
 }
-
-let a = 12;
-console.log((a >= 1 && a <= 2) || a === 12);
